@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-a-holic</title>
+
+    
+
+    <link rel="stylesheet" href="main.css">  
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="format.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="mediaquery.css">
+
+
+</head>
+<body>
+
+<header class="header">
+
+    <a href="#" class="logo"><i class="fas fa-book"></i>Book-a-holic</a>
+
+    <nav class="navbar"> 
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#product">variety</a>
+        <a href="#format">format</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+        
+    <form action="" onsubmit="return sendToPage()" method="post" class="search-form">
+        <input type="search" id="search-box" placeholder="think different...">
+        <button  class="fas fa-search"></button>
+    </form>
+
+    <div class="shopping-cart">Selected Items: <span>0</span>
+        <div class="myproducts"></div>
+        <div class="basketTotalContainer"></div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+
+    <form class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>entertaining and <span>best selling</span> books for you</h3>
+        <p>to all my fellow book-a-holics out there. it's never too late to fall in love with reading. welcome readerpops!</p>  
+    </div>
+    <div class="wrapper">
+        <i class="fa-solid fa-angle-left"></i>
+        <div class="homeImage">
+            <img src="image/home-scroll-images/home-img-1.jpg">
+            <img src="image/home-scroll-images/home-img-2.jpg">
+            <img src="image/home-scroll-images/home-img-3.jpg">
+            <img src="image/home-scroll-images/home-img-4.jpg">
+            <img src="image/home-scroll-images/home-img-5.jpg">
+            <img src="image/home-scroll-images/home-img-6.jpg">
+            <img src="image/home-scroll-images/home-img-7.jpg">
+            <img src="image/home-scroll-images/home-img-8.jpeg">
+            <img src="image/home-scroll-images/home-img-9.jpeg">
+            <img src="image/home-scroll-images/home-img-10.jpg">
+            <img src="image/home-scroll-images/home-img-11.jpg">
+        </div>
+        <i class="fa-solid fa-angle-right"></i>
+
+        
+    </div>
+    
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"><span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>used books</h3>
+            <p>low cost, pre-loved books</p>
+            <a href="used_book/usedbook.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>free delivery</h3>
+            <p> free shipping to doorstep</p>
+            <a href="used_book/usedbook.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>easy payments</h3>
+            <p>accept payments easily and globally</p>
+            <a href="used_book/usedbook.html" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- products section starts  -->
+
+
+<section class="product" id="product">
+
+    <h1 class="heading"><span>books</span> </h1>
+            
+        <div class="box-container">
+            
+            <div class="box description des-1" id="blur-1">
+                <img src="image/product-1.jpg" >
+                <h3 class="product-title">crooked kingdom</h3>
+                <h3>-leigh bardugo</h3>
+                <div class="price"> Rs.170/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+                <a  onclick="blurToggle1()" class="btn blurb">Blurb</a>
+            </div>
+
+                                <div id="popup1">
+                                    <div class="popup-details">
+                                        <img src="image/product-1.jpg">
+                                        <h3 class="product-title">crooked kingdom</h3>
+                                        <h3>-leigh bardugo</h3>
+                                        <div class="price"> Rs.170/- </div>
+                                    </div>
+                                    <div class="popup-content">
+                                        <h4>Welcome to the world of the Grisha.
+                                            Kaz Brekker and his crew of deadly outcasts have just pulled off a heist so daring 
+                                            even they didn't think they'd survive. But instead of divvying up a fat reward, they're right back to fighting for their lives.
+                                            Double-crossed and badly weakened, the crew is low on resources, allies, and hope. As powerful forces from around the world descend on 
+                                            Ketterdam to root out the secrets of the dangerous drug known as jurda parem, old rivals and new enemies emerge to challenge Kaz's 
+                                            cunning and test the team's fragile loyalties.
+                                            A war will be waged on the city's dark and twisting streets - a battle for revenge and redemption that
+                                            will decide the fate of the Grisha world.</h4>
+                                        <a  onclick="blurToggle1()" class="btn back-purchase">Back to purchase</a>
+                                    </div>
+                                    
+                                </div>
+
+            <div class="box description des-2" id="blur-2"> 
+                <img  src="image/product-2.jpg">
+                <h3 class="product-title">the cruel prince</h3>
+                <h3>-holly black</h3>
+                <div class="price"> Rs.190/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+                <a  onclick="blurToggle2()" class="btn blurb ">Blurb</a>
+            </div>
+                                <div id="popup2">
+                                    <div class="popup-details">
+                                        <img src="image/product-2.jpg">
+                                        <h3 class="product-title">The Cruel Prince</h3>
+                                        <h3>-holly black</h3>
+                                        <div class="price"> Rs.190/- </div>
+                                    </div>
+                                    <div class="popup-content">
+                                        <h4>Of course I want to be like them. They're beautiful as blades forged in some divine fire. They will live forever.
+                                        And Cardan is even more beautiful than the rest. I hate him more than all the others. I hate him so much that sometimes when 
+                                        I look at him, I can hardly breathe.
+                                        Jude was seven when her parents were murdered and she and her two sisters were stolen away to live in the 
+                                        treacherous High Court of Faerie. Ten years later, Jude wants nothing more than to belong there, despite her mortality. 
+                                        But many of the fey despise humans. Especially Prince Cardan, the youngest and wickedest son of the High King.
+                                        To win a place at the Court, she must defy him-and face the consequences.
+                                        As Jude becomes more deeply embroiled in palace intrigues and deceptions, she discovers her own capacity for trickery 
+                                        and bloodshed. But as betrayal threatens to drown the Courts of Faerie in violence, Jude will need to risk her life in a 
+                                        dangerous alliance to save her sisters, and Faerie itself.</h4>
+                                         <a  onclick="blurToggle2()" class="btn back-purchase">Back to purchase</a>
+                                    </div>
+                                    
+                                </div>
+
+            
+            <div class="box description des-3" id="blur-3">
+                <img src="image/product-3.jpg" >
+                <h3 class="product-title">one of us is lying</h3>
+                <h3>-karen m.mcmanus</h3>
+                <div class="price"> Rs.260/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+                <a  onclick="blurToggle3()" class="btn blurb">Blurb</a>
+            </div>
+
+                                <div id="popup3">
+                                    <div class="popup-details">
+                                        <img src="image/product-3.jpg">
+                                        <h3 class="product-title">one of us is lying</h3>
+                                        <h3>-karen m.mcmanus</h3>
+                                        <div class="price"> Rs.260/- </div>
+                                    </div>
+                                    <div class="popup-content">
+                                        <h4>Pay close attention and you might solve this.
+                                            On Monday afternoon, five students at Bayview High walk into detention.
+                                            Bronwyn, the brain, is Yale-bound and never breaks a rule.
+                                            Addy, the beauty, is the picture-perfect homecoming princess.
+                                            Nate, the criminal, is already on probation for dealing.
+                                            Cooper, the athlete, is the all-star baseball pitcher.
+                                            And Simon, the outcast, is the creator of Bayview High's notorious gossip app.
+                                            Only, Simon never makes it out of that classroom. Before the end of detention Simon's dead. And according to investigators, his death wasn't 
+                                            an accident. On Monday, he died. But on Tuesday, he'd planned to post juicy reveals about all four of his high-profile classmates, which makes 
+                                            all four of them suspects in his murder. Or are they the perfect patsies for a killer who's still on the loose?
+                                            Everyone has secrets, right? What really matters is how far you would go to protect them.</h4>
+                                        <a  onclick="blurToggle3()" class="btn back-purchase">Back to purchase</a>
+                                    </div>
+                                </div>
+
+            
+            <div class="box description des-4" id="blur-4">
+                <img src="image/product-4.jpg" >
+                <h3 class="product-title">a good girl's guide to murder</h3>
+                <h3>-holly jackson</h3>
+                <div class="price"> Rs.120/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+                <a  onclick="blurToggle4()" class="btn blurb">Blurb</a>
+            </div>
+                                <div id="popup4">
+                                    <div class="popup-details">
+                                        <img src="image/product-4.jpg">
+                                        <h3 class="product-title">A good girl's guide to Murder</h3>
+                                        <h3>-holly jackson</h3>
+                                        <div class="price"> Rs.120/- </div>
+                                    </div>
+                                    <div class="popup-content">
+                                        <h4>The case is closed. Five years ago, schoolgirl Andie Bell was murdered by Sal Singh. The police know he did it. Everyone in town knows he did it.
+                                            But having grown up in the same small town that was consumed by the murder, Pippa Fitz-Amobi isn't so sure. When she chooses the case as the topic
+                                            for her final year project, she starts to uncover secrets that someone in town desperately wants to stay hidden. And if the real killer is still
+                                            out there, how far will they go to keep Pip from the truth?</h4>
+                                        <a  onclick="blurToggle4()" class="btn back-purchase">Back to purchase</a>
+                                    </div>
+                                </div>
+            
+    </div>
+    <div class="box-container">
+            
+            <div class="box description des-5" id="blur-5">
+                <img src="image/product-5.jpg" >
+                <h3 class="product-title">it starts with us</h3>
+                <h3>-colleen hoover</h3>
+                <div class="price"> Rs.299/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+                <a  onclick="blurToggle5()" class="btn blurb">Blurb</a>
+            </div>
+
+                                <div id="popup5">
+                                    <div class="popup-details">
+                                        <img src="image/product-5.jpg">
+                                        <h3 class="product-title">it starts with us</h3>
+                                        <h3>-colleen hoover</h3>
+                                        <div class="price"> Rs.299/- </div>
+                                    </div>
+                                    <div class="popup-content">
+                                        <h4>Lily and her ex-husband, Ryle, have just settled into a civil coparenting rhythm when she suddenly bumps into her first love, Atlas, again.
+                                            After nearly two years separated, she is elated that for once, time is on their side, and she immediately says yes when Atlas asks her on a date.
+                                           But her excitement is quickly hampered by the knowledge that, though they are no longer married, Ryle is still very much a part of her life—and 
+                                           Atlas Corrigan is the one man he will hate being in his ex-wife and daughter's life.</h4>
+                                        <a  onclick="blurToggle5()" class="btn back-purchase">Back to purchase</a>
+                                    </div>
+                                </div>
+
+            <div class="box description des-6" id="blur-6">
+                <img src="image/product-6.jpg" >
+                <h3 class="product-title">atomic habits</h3>
+                <h3>-james clear</h3>
+                <div class="price"> Rs.135/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+                <a  onclick="blurToggle6()" class="btn blurb">Blurb</a>
+            </div>
+
+                                <div id="popup6">
+                                    <div class="popup-details">
+                                        <img src="image/product-6.jpg">
+                                        <h3 class="product-title">atomic habits</h3>
+                                        <h3>-james clear</h3>
+                                        <div class="price"> Rs.135/- </div>
+                                    </div>
+                                    <div class="popup-content">
+                                        <h4>No matter your goals, Atomic Habits offers a proven framework for improving—every day. James Clear, one of the world's leading experts on habit 
+                                            formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that 
+                                            lead to remarkable results.
+                                            If you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeat themselves again and again 
+                                            not because you don't want to change, but because you have the wrong system for change. You do not rise to the level of your goals. You fall to 
+                                            the level of your systems. Here, you'll get a proven system that can take you to new heights.
+                                            Clear is known for his ability to distill complex topics into simple behaviors that can be easily applied to daily life and work. Here, he 
+                                            draws on the most proven ideas from biology, psychology, and neuroscience to create an easy-to-understand guide for making good habits 
+                                            inevitable and bad habits impossible.</h4>
+                                        <a  onclick="blurToggle6()" class="btn back-purchase">Back to purchase</a>
+                                    </div>
+                                </div>
+
+            <div class="box description des-7" id="blur-7">
+                <img src="image/product-7.jpg" >
+                <h3 class="product-title">the miracle morning</h3>
+                <h3>-hal elrod</h3>
+                <div class="price"> Rs.165/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+                <a  onclick="blurToggle7()" class="btn blurb">Blurb</a>
+            </div>
+
+                                <div id="popup7">
+                                    <div class="popup-details">
+                                        <img src="image/product-7.jpg">
+                                        <h3 class="product-title">the miracle morning</h3>
+                                        <h3>-hal elrod</h3>
+                                        <div class="price"> Rs.165/- </div>
+                                    </div>
+                                    <div class="popup-content">
+                                        <h4>What if you could miraculously wake up tomorrow and any—or every area of your life was transformed? What would be different? Would you be happier?
+                                            Healthier? More successful? In better shape? Would you have more energy? Less Stress? More Money? Better relationships? Which of your problems would
+                                            be solved?
+                                            What if I told you that there is a "not-so-obvious" secret that is guaranteed to transform any—or literally every area of your life, faster than 
+                                            you ever thought possible? What if I told you it would only take 6 minutes a day?
+                                            Enter The Miracle Morning. What's now being practiced by thousands of people around the world could perhaps be the simplest approach to creating 
+                                            the life you've always wanted. It's been right there in front of us, but this book has finally brought it to life.
+                                            Are you ready? The next chapter of your life—the most extraordinary life you've ever imagined—is about to begin.</h4>
+                                        <a  onclick="blurToggle7()" class="btn back-purchase">Back to purchase</a>
+                                    </div>
+                                </div>
+
+            <div class="box description des-8" id="blur-8">
+                <img src="image/product-8.jpg" >
+                <h3 class="product-title">the secret</h3>
+                <h3>-rhonda byrne</h3>
+                <div class="price"> Rs.185/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+                <a  onclick="blurToggle8()" class="btn blurb">Blurb</a>
+            </div>
+
+                                <div id="popup8">
+                                    <div class="popup-details">
+                                        <img src="image/product-8.jpg">
+                                        <h3 class="product-title">the secret</h3>
+                                        <h3>-rhonda byrne</h3>
+                                        <div class="price"> Rs.185/- </div>
+                                    </div>
+                                    <div class="popup-content">
+                                        <h4>Fragments of a Great Secret have been found in the oral traditions, in literature, in religions, and philosophies throughout 
+                                            the centuries. For the first time, all the pieces of The Secret come together in an incredible revelation that will be life-transforming
+                                             for all who experience it.
+                                            The Secret contains wisdom from modern-day teachers—men and women who have used it to achieve health, wealth, and happiness.
+                                             By applying the knowledge of The Secret, they bring to light compelling stories of eradicating disease, acquiring massive wealth, 
+                                             overcoming obstacles, and achieving what many would regard as impossible.</h4>
+                                        <a  onclick="blurToggle8()" class="btn back-purchase">Back to purchase</a>
+                                    </div>
+                                </div>
+    </div> 
+            
+</section>
+
+
+<!-- products section ends -->
+
+<!-- categories section starts  -->
+
+<section class="format" id="format">
+
+    <h1 class="heading"><span>format</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/cat-1.jpg" alt="">
+            <h3>paperback</h3>
+            <p>upto 10% off</p>
+            <a href="used_book/usedbook.html"  class="btn">Know more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-2.jpg" alt="">
+            <h3>hardback</h3>
+            <p>upto 15% off</p>
+            <a href="used_book/usedbook.html" class="btn">Know more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-3.jpg" alt="">
+            <h3>kindle edition</h3>
+            <p>upto 45% off</p>
+            <a href="used_book/usedbook.html" class="btn">Know more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-4.jpg" alt="">
+            <h3>audiobook</h3>
+            <p>upto 20% off</p>
+            <a href="used_book/usedbook.html" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- review section starts  -->
+<section class="review" id="review">
+
+    <h1 class="heading"><span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/pic-1.jpg" alt="">
+            <p>books from book-a-holic are always of great quality.I had a nice book buying experience. The books are in good condition, reasonable prices and their delivery was prompt.</p>
+                <h3>dobby</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+        </div>
+
+        <div class="box">
+            <img src="image/pic-2.png" alt="">
+            <p>the books they offer are so time-less that they are deserved to be read by all regardless of age. regular customers do get offers and discounts</p>
+                <h3>uchiha itachi</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+        </div>
+        <div class="box">
+            <img src="image/pic-3.jfif" alt="">
+            <p>completely reliable online book selling website, really love their service and professionalism. i would prefer to be their customer for my next purchase ai amor ai amor</p>
+                <h3>dholu</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+        </div>
+        <div class="box">
+            <img src="image/pic-4.png" alt="">
+            <p>my summers have been filled with books for book-a-holic, i was able to avail rare collection of books during festive times.</p>
+                <h3>phineas</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                      </div>
+        </div>
+
+        </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"><span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by laura </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 5th august, 2022 </a>
+                </div>
+                <h3>booked blogger</h3>
+                <p>Struggling to catch up with reading goals? Fret not! These books will definitely contribute in quality and quantity and you will fly through the pages in no time</p>
+                <a href="https://whatshotblog.com/" class="btn" target="_blank">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by stephanie </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 30th july, 2021 </a>
+                </div>
+                <h3>the expresso edition</h3>
+                <p>One can get a grip of the latest editions of classic novels with much ease. Every book in this world is at your hand by connecting with this incredible website</p>
+                <a href="https://theespressoedition.com/" class="btn" target="_blank">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by parapio </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 31st july, 2019 </a>
+                </div>
+                <h3>never enough novels</h3>
+                <p>What I personally enjoyed from this book blog is the mini reviews. the reviews are genuine enough to have a great choice of your read. It's a go-to online bookstore for every bibliophile</p>
+                <a href="https://neverenoughnovels.com/" class="btn" target="_blank">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+e
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> book-a-holic <i class="fa-solid fa-book-heart"></i> </h3>
+            <p>Books stays with us long after the last page is read! We are delighted to offer you some best reading experience. Jump into the house of books with book-a-holic, Follow us on: </p>
+            <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com" class="fab fa-linkedin"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="fab fa-youtube"></a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a  class="links"> <i class="fas fa-phone"></i> 9840562479 </a>
+            <a  class="links"> <i class="fas fa-phone"></i> 044-4545-4545</a>
+            <a  class="links"> <i class="fas fa-envelope"></i> apoorva.krishnan31@gmail.com </a>
+            <a  class="links"> <i class="fas fa-map-marker-alt"></i> chennai,india-600026 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#product" class="links"> <i class="fas fa-arrow-right"></i> variety </a>
+            <a href="#format" class="links"> <i class="fas fa-arrow-right"></i> format </a>
+            <a href="#review" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> booked by <span>k. apoorva </span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="navbar.js"></script>
+        <script src="cart-inner.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="search-bar.js"></script>
+        <script src="product-expand.js"></script>
+        <script src="scroll-home.js"></script>
+
+    </body>
+</html>
