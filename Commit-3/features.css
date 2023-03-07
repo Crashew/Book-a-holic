@@ -1,0 +1,44 @@
+
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    
+}
+
+.features .box-container .box{
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var( --transition);
+}
+
+.features .box-container .box:hover{
+    transform: var( --transform);
+}
+
+.features .box-container .box img{
+    margin:1rem 0;
+    height: 15rem;
+}
+.features .box-container .box img:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.features .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color:var(--black);
+}
+
+.features .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--black);
+    padding:1rem 0;
+}
+.features .box-container .box a:hover{
+    background-color: var(--basecolor);;
+}
