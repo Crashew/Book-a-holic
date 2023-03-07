@@ -1,0 +1,32 @@
+
+.home{
+    display: flex;
+    align-items: left;
+    justify-content: right;
+    background: url("image/banner-bg.webp") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+
+.home .content{
+    text-align: center;
+    width:80rem;
+}
+
+.home .content h3{
+    color:var(--black);
+    font-size: 5rem;
+}
+
+.home .content h3 span{
+    color:var(var(--basecolor));
+}
+
+.home .content p{
+    color:var(--black);
+    font-size: 1.9rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
