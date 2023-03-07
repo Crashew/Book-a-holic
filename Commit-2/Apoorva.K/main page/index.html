@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-a-holic</title>
+
+    
+
+    <link rel="stylesheet" href="main.css">  
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="format.css">
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" href="footer.css">
+
+</head>
+<body>
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fa fa-book"></i> book-a-holic </a>
+
+    <nav class="navbar"> 
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#product">variety</a>
+        <a href="#format">format</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+        
+    <form action="" onsubmit="return sendToPage()" method="post" class="search-form">
+        <input type="search" id="search-box" placeholder="think different...">
+        <button  class="fas fa-search"></button>
+    </form>
+
+    <div class="shopping-cart">Selected Items: <span>0</span>
+        <div class="myproducts"></div>
+        <div class="basketTotalContainer"></div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+
+    <form class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <div class="homeVideo" >
+         <img src="image/home-video.jpg">
+    </div>
+    <div class="content">
+        <h3>entertaining and <span>best selling</span> books for you</h3>
+        <p>to all my fellow book-a-holics out there. it's never too late to fall in love with reading. welcome readerpops!</p>
+        
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<section class="features" id="features">
+
+    <h1 class="heading"><span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>used books</h3>
+            <p>low cost, pre-loved books</p>
+            <a href="used_book/usedbook.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>free delivery</h3>
+            <p> free shipping to doorstep</p>
+            <a href="used_book/usedbook.html" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>easy payments</h3>
+            <p>accept payments easily and globally</p>
+            <a href="used_book/usedbook.html" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- products section starts  -->
+
+
+<section class="product" id="product">
+
+    <h1 class="heading"><span>books</span> </h1>
+            
+        <div class="box-container">
+            
+            <div class="box">
+                <img src="image/product-1.jpg" alt="">
+                <h3 class="product-title">crooked kingdom</h3>
+                <h3>-leigh bardugo</h3>
+                <div class="price"> Rs.170/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+            </div>
+
+            <div  class="box">
+                <img src="image/product-2.jpg" alt="">
+                <h3 class="product-title">the cruel prince</h3>
+                <h3>-holly black</h3>
+                <div class="price"> Rs.190/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="image/product-3.jpg" alt="">
+                <h3 class="product-title">one of us is lying</h3>
+                <h3>-karen m.mcmanus</h3>
+                <div class="price"> Rs.260/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+            </div>
+            <div class="box">
+                <img src="image/product-4.jpg" alt="">
+                <h3 class="product-title">a good girl's guide<br>to murder</h3>
+                <h3>-holly jackson</h3>
+                <div class="price"> Rs.120/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a  class="btn add-cart">add to cart</a>
+            </div>
+            
+    </div>
+    <div class="box-container">
+            
+        <div class="box">
+            <img src="image/product-5.jpg" alt="">
+            <h3 class="product-title">it starts with us</h3>
+            <h3>-colleen hoover</h3>
+            <div class="price"> Rs.299/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a  class="btn add-cart">add to cart</a>
+        </div>
+
+        <div class="box">
+            <img src="image/product-6.jpg" alt="">
+            <h3 class="product-title">atomic habits</h3>
+            <h3>-james clear</h3>
+            <div class="price"> Rs.135/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a  class="btn add-cart">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="image/product-7.jpg" alt="">
+            <h3 class="product-title">the miracle morning</h3>
+            <h3>-hal elrod</h3>
+            <div class="price"> Rs.165/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <a  class="btn add-cart">add to cart</a>
+        </div>
+        <div class="box">
+            <img src="image/product-8.jpg" alt="">
+            <h3 class="product-title">the secret</h3>
+            <h3>-rhonda byrne</h3>
+            <div class="price"> Rs.110/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <a  class="btn add-cart">add to cart</a>
+        </div>
+        
+</div>
+            
+</section>
+
+<!-- products section ends -->
+
+<!-- categories section starts  -->
+
+<section class="format" id="format">
+
+    <h1 class="heading"><span>format</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/cat-1.jpg" alt="">
+            <h3>paperback</h3>
+            <p>upto 10% off</p>
+            <a href="#"  class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-2.jpg" alt="">
+            <h3>hardback</h3>
+            <p>upto 15% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-3.jpg" alt="">
+            <h3>kindle edition</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-4.jpg" alt="">
+            <h3>audiobook</h3>
+            <p>upto 20% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section ends -->
+
+<!-- review section starts  -->
+<section class="review" id="review">
+
+    <h1 class="heading"><span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/pic-1.jpg" alt="">
+            <p>books from book-a-holic are always of great quality.I had a nice book buying experience. The books are in good condition, reasonable prices and their delivery was prompt.</p>
+                <h3>dobby</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+        </div>
+
+        <div class="box">
+            <img src="image/pic-2.png" alt="">
+            <p>the books they offer are so time-less that they are deserved to be read by all regardless of age. regular customers do get offers and discounts</p>
+                <h3>uchiha itachi</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+        </div>
+        <div class="box">
+            <img src="image/pic-3.jfif" alt="">
+            <p>completely reliable online book selling website, really love their service and professionalism. i would prefer to be their customer for my next purchase ai amor ai amor</p>
+                <h3>dholu</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+        </div>
+        <div class="box">
+            <img src="image/pic-4.png" alt="">
+            <p>my summers have been filled with books for book-a-holic, i was able to avail rare collection of books during festive times.</p>
+                <h3>phineas</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                      </div>
+        </div>
+
+        </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"><span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by laura </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 5th august, 2022 </a>
+                </div>
+                <h3>booked blogger</h3>
+                <p>Struggling to catch up with reading goals? Fret not! These books will definitely contribute in quality and quantity and you will fly through the pages in no time</p>
+                <a href="https://whatshotblog.com/" class="btn" target="_blank">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by stephanie </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 30th july, 2021 </a>
+                </div>
+                <h3>the expresso edition</h3>
+                <p>One can get a grip of the latest editions of classic novels with much ease. Every book in this world is at your hand by connecting with this incredible website</p>
+                <a href="https://theespressoedition.com/" class="btn" target="_blank">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.png" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> <i class="fas fa-user"></i> by parapio </a>
+                    <a href="#"> <i class="fas fa-calendar"></i> 31st july, 2019 </a>
+                </div>
+                <h3>never enough novels</h3>
+                <p>What I personally enjoyed from this book blog is the mini reviews. the reviews are genuine enough to have a great choice of your read. It's a go-to online bookstore for every bibliophile</p>
+                <a href="https://neverenoughnovels.com/" class="btn" target="_blank">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+e
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> book-a-holic <i class="fa-solid fa-book-heart"></i> </h3>
+            <p>Books stays with us long after the last page is read! We are delighted to offer you some best reading experience. Jump into the house of books with book-a-holic, Follow us on: </p>
+            <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a  class="links"> <i class="fas fa-phone"></i> 9840562479 </a>
+            <a  class="links"> <i class="fas fa-phone"></i> 044-4545-4545</a>
+            <a  class="links"> <i class="fas fa-envelope"></i> apoorva.krishnan31@gmail.com </a>
+            <a  class="links"> <i class="fas fa-map-marker-alt"></i> chennai,india-600026 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#product" class="links"> <i class="fas fa-arrow-right"></i> variety </a>
+            <a href="#format" class="links"> <i class="fas fa-arrow-right"></i> format </a>
+            <a href="#review" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> booked by <span>k. apoorva </span></div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <!-- custom js file link  -->
+        <script src="navbar.js"></script>
+        <script src="cart-inner.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="search-bar.js"></script>
+        <script src="product-expand.js"></script>
+
+    </body>
+</html>
