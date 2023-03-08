@@ -1,0 +1,242 @@
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 40px;
+    background:var(--basecolor);
+    box-shadow: var(--box-shadow);
+    margin-left: 0;
+}
+.header .logo{
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+}
+.header .logo i{
+    margin-right: 7px;
+}
+.header  img{
+    height: 20rem;
+    width: 70px;
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color:var(--black);
+    
+}
+
+.header .navbar a:hover{
+    color:var(--white);
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.5rem;
+    background: var(--white);
+    color:var(--black);
+    font-size: 2rem;
+    margin-left: 5px;
+    margin-right: 8px;
+    padding: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background: var(--white);
+    color:var(--basecolor);
+    box-shadow: var(--box-shadow);
+}
+
+.header .search-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width: 50rem;
+    height:5rem;
+    background: var(--white);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.header .search-form.active{
+    right:2rem;
+    transition: .4s linear;
+}
+
+.header .search-form input{
+    height:100%;
+    width:100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding:0 1.5rem;
+}
+
+.header .search-form button{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color:var(rgb(172, 99, 99));
+    cursor: pointer;
+}
+
+.header .search-form button:hover{
+    color:var(rgb(172, 99, 99));
+}
+
+.header .shopping-cart{
+    position: absolute;
+    top:110%; right:-110%;
+    padding:1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width:40rem;
+    background-image: linear-gradient( rgb(221, 147, 147), rgb(219, 125, 125), rgb(210, 97, 97), rgb(197, 87, 87));
+    font-size: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.header .shopping-cart.active{
+    right:2rem;
+    transition: 0.4s linear;
+}
+.header .shopping-cart .myproducts .box{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:1rem;
+    position: relative;
+    margin:1rem 0;
+    border: solid 3px;
+}
+
+.header .shopping-cart .myproducts .box img{
+    height:10rem;
+    border: solid 2px;
+    margin: 4px;
+}
+.header .shopping-cart .myproducts .box img:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.header .shopping-cart .myproducts .box .fa-trash{
+    font-size: 2rem;
+    position: absolute;
+    top:50%; right:2rem;
+    cursor: pointer;
+    color:var(--black);
+}
+
+.header .shopping-cart .myproducts .box .fa-trash:hover{
+    color: var(--darkcolor);
+
+}
+.header .shopping-cart .btn{
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+
+}
+.header .shopping-cart .myproducts .box .content h3{
+    color:var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    max-width: 25rem;
+}
+
+.header .shopping-cart .myproducts .box .content .price{
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+
+.header .shopping-cart .myproducts .box .content .quantity{
+    color:var(--light-color);
+    font-size: 1.5rem;
+}
+.header .shopping-cart .myproducts .box .content .total{
+    color:var(--light-color);
+    font-size: 1.7rem;
+}
+.basketTotalContainer .box{
+        padding: 4px;
+        border: solid 4px;
+
+}
+.basketTotalContainer .box .content h4{
+    color:var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+    max-width: 25rem;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header .login-form{
+    position: absolute;
+    top:110%; right:-110%;
+    width:35rem;
+    box-shadow: var(--box-shadow);
+    padding:2rem;
+    border-radius: .5rem;
+    background-image: linear-gradient( rgb(221, 147, 147), rgb(219, 125, 125), rgb(210, 97, 97), rgb(197, 87, 87));
+    text-align: center;
+    visibility: hidden;
+    
+}
+
+.header .login-form.active{
+    right:2rem;
+    transition: .4s linear;
+    visibility: visible;
+    
+}
+
+.header .login-form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.header .login-form .box{
+    width: 100%;
+    margin:.7rem 0;
+    background:#eee;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.header .login-form p{
+    font-size: 1.4rem;
+    padding:.5rem 0;
+    color:var(--light-color);
+}
+
+.header .login-form p a{
+    color:var(--white);
+    text-decoration: underline;
+}
+
+.header .prof-pic{
+    visibility: visible;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 0.5rem;    
+}
