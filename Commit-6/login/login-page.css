@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --darkcolor:rgb(121, 47, 47);
+    --box-shadow:0 1.5rem 2.5rem rgba(0,0,0,0.5);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --basecolor: rgb(219, 125, 125);
+}
+body {
+  background-color: var(--darkcolor);
+}
+.book {
+  position: absolute;
+  width: 18.5rem;
+  height: 12.5rem;
+  perspective: 90rem;
+  margin-left: 450px;
+  margin-top: 150px;
+}
+.cover {
+  background-color: var(--basecolor);
+  transform: rotateY(0deg);
+  width: 14rem;
+  height: 30rem;
+}
+.page {
+  top: 0.25rem;
+  left: 0.45rem;
+  background-color: #ffffff;
+  transform: rotateY(0deg);
+  width: 13.5rem;
+  height: 29.5rem;
+  font-size: 8px;
+}
+.page::before, .page::after {
+  display: block;
+  padding-bottom: 1rem;
+}
+.cover, .page {
+  position: absolute;
+  padding: 1rem;
+  transform-origin: 100% 0;
+  border-radius: 5px 0 0 5px;
+  box-shadow: inset 3px 0px 20px rgba(0, 0, 0, 0.2),
+                    0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.cover.turn {
+  animation: bookCover 3s forwards;
+}
+.page.turn {
+  animation: bookOpen 5s forwards;
+}
+.page:nth-of-type(1) {
+  animation-delay: 0.05s;
+}
+.page:nth-of-type(2) {
+  animation-delay: 0.33s
+}
+.page:nth-of-type(3) {
+  animation-delay: 0.66s;
+}
+.page:nth-of-type(4) {
+  animation: bookOpen150deg 3s forwards;
+  animation-delay: 0.99s;
+}
+.page:nth-of-type(5) {
+  animation: bookOpen30deg 3s forwards;
+  animation-delay: 1.2s;
+}
+.page:nth-of-type(6) {
+  animation: bookOpen55deg 3s forwards;
+  animation-delay: 1.25s;
+}
+@keyframes bookOpen {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 999;}
+}
+@keyframes bookCover {
+  30% { z-index: 999 }
+  100% {  transform: rotateY(180deg);
+    z-index: 1;}
+}
+
+
+
+
+span{
+  color: black;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+}
+
+header{
+  color: black;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  height: 45px;
+  width: 87%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: black;
+  padding: 0 0 0 45px;
+  margin: 2px 0 12px 0;
+  background:rgba(0, 0, 0, 0.1);
+}
+::-webkit-input-placeholder{
+  color: black;
+}
+.submit{
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: .3s;
+}
+.submit:hover{
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.1);
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+.left{
+  display: flex;
+}
+label a{
+  color: black;
+}
+
+/* 
+*{
+  font-family: poppins;
+}
+body{
+  background-image: url("login-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 380px;
+  width: 380px;
+  margin-left: 950px;
+  margin-top: 200px;
+}
+.container{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
+}
+span{
+  color: black;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+header{
+  color: black;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+}
+.input{
+  height: 45px;
+  width: 87%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: black;
+  padding: 0 0 0 45px;
+  margin: 2px 0 12px 0;
+  background:rgba(0, 0, 0, 0.1);
+}
+::-webkit-input-placeholder{
+  color: black;
+}
+.submit{
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: .3s;
+}
+.submit:hover{
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.1);
+}
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+}
+.left{
+  display: flex;
+}
+label a{
+  color: black;
+} */

@@ -1,0 +1,131 @@
+
+.product .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap:1.5rem;
+}
+
+.product .box-container .box{
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product .box-container .box:hover{
+    transform: var(--transform);
+
+}
+
+.product .box-container .box img{
+    margin:1rem 0;
+    height:15rem;
+}
+.product .box-container .box img:hover{
+    box-shadow: var(--box-shadow);
+    border: black solid;
+}
+.product .product .box-container .box h3{
+   font-size: 2.5rem;
+   color:var(--black);
+   line-height: 1.8;
+}
+
+.product .box-container .box .add-cart{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+}
+
+.product .box-container .box .add-cart:hover{
+    background: var(--white);
+    color:rgb(0, 0, 0);
+    background-color: var(--basecolor);
+}
+.product .box-container .box .description{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border:.2rem solid var(--black);
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    cursor: pointer;
+
+}
+.blurb:hover{
+    background-color: var(--basecolor);
+}
+.blur.active{
+    filter: blur(4px);
+    cursor: pointer;
+
+}
+.popup{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.30);
+    background-color: var(--basecolor);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 14px;
+    line-height: 26px;
+    display:grid;
+    grid-template-columns: 200px 1fr;
+}
+
+
+.popup-details{
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    background:var(--darkcolor);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.popup-details:hover{
+    transform: var(--transform);
+
+}
+.popup-details img{
+    margin:1rem 0;
+    height:15rem;
+    border: solid white 2px;
+}
+.popup-details h3, .popup-details .price{
+   font-size: 1.7rem;
+   color:var(--white);
+   line-height: 1.8;
+}
+.popup-content{
+    padding-left: 40px;
+}
+.back-purchase:hover{
+    background-color: var(--white);
+}
+.popup.active
+{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 60%;
+    z-index: 1000;
+}
+
