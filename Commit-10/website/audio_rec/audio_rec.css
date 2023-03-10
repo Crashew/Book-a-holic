@@ -1,0 +1,94 @@
+:root{ 
+    --white:#ffffff;
+    --black:#000000;
+    --darkcolor:rgb(121, 47, 47);
+    --box-shadow:0 0.5rem 2.5rem rgba(0,0,0,0.5);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --basecolor: rgb(219, 125, 125);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background-color: var(--basecolor);   
+    
+}
+
+.features .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+    
+}
+.features .box-container .box{
+    width: 28rem;
+    height: 50rem;
+    margin-left: 10px;
+    margin-top: 74px;
+    background-color: white;
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 2.5rem rgba(255,255,255,0.5);
+    border-radius: 8px;
+    background-image: url("spotify-bg.jpg"); 
+    background-size: contain;
+    position: relative;
+}
+.features .box-container .box:hover{
+    box-shadow: 5px 5px 10px 1px rgb(255, 255, 255), -5px -5px 10px 1px rgb(255, 255, 255), inset 0 3px 0 3px #d6d6d6, inset 0 -3px 0 3px #d6d6d6;
+}
+.features .box-container .box .item{
+    width: 13rem;
+    height: 20rem;
+    margin-top: 80px;
+}
+.features .box-container .box .fa-play{
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 67px;
+    right: 116px;
+    font-size: 16px;
+    text-align: center;
+    visibility: visible;
+
+}
+.features .box-container .box .fa-play.active{
+    visibility: hidden;
+    
+}
+.change .fa-pause{
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 67px;
+    right: 116px;
+    font-size: 16px;
+    text-align: center;
+    visibility: visible;
+}
+.change .fa-pause.active{
+    visibility: visible;
+}
+.features .box-container .box .fa-play:hover{
+    background-color: var(--basecolor);
+}

@@ -1,0 +1,68 @@
+:root{ 
+    --white:#ffffff;
+    --black:#000000;
+    --darkcolor:rgb(121, 47, 47);
+    --box-shadow:0 0.5rem 2.5rem rgba(0,0,0,0.5);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --basecolor: rgb(219, 125, 125);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background-color: var(--basecolor);
+    
+    position: relative;
+    
+}
+
+.features .box-container{
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    right: 60px;
+    background-image: url('comic-book-bg.jpg');
+    background-size: cover;
+    
+}
+.features .box-container .box{
+    margin-top: 90px;
+    padding:3rem 0rem;
+    border-radius: 5rem;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: 9px 9px 9px rgba(0,0,0,1)
+}
+
+.features .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--black);
+    padding:1rem 0;
+}
+
+.features .heading{
+    color:white;
+    padding: 20px;
+    font-size: 30px;
+}
+.features .heading span{
+    color:white;
+}

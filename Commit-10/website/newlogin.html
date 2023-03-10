@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-a-holic</title>
+
+    
+
+    <link rel="stylesheet" href="login-page.css">
+
+
+</head>
+<body>
+    <div class="container">
+
+<header class="header">
+
+    <a class="logo"><i class="fas fa-book"></i>Book-a-holic</a>
+          
+</header>
+</div>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+   
+  <div class="book" id="book">
+    <div class="back" id="registerpage">
+                  <div class="back-container">
+                      <div class="top-header">
+                        <header>REGISTER NOW</header>
+                      </div>
+                    <form>
+                      <div class="input-field">
+                        <input type="text" class="input username" id="name" placeholder="Username" required>
+                      </div>
+                
+                      <div class="input-field">
+                        <input type="password" class="input password" id="pwd" placeholder="Password" required>
+                      
+                      </div>
+                
+                      <div class="input-field">
+                        <button type="button" onclick="validate()" class="submit">Submit
+                        </button>
+                      </div>
+                    </form>           
+                      
+                    
+                  </div>              
+    </div>
+    <div class="page6"></div>
+    <div class="page5"></div>
+    <div class="page4"></div>
+    <div class="page3"></div>
+    <div class="page2" id="loginpage">
+                  <div class="front-container">
+                      <div class="top-header">
+                        <header>LOGIN</header>
+                      </div>
+                    <form>
+                      <div class="input-field">
+                        <input type="text" class="input username" id="username" placeholder="Username" required>
+                        
+                      </div>
+                
+                      <div class="input-field">
+                        <input type="password" class="input password" id="password" placeholder="Password" required>
+                       
+                      </div>
+                
+                      <div class="input-field">
+                        <button type="button" onclick="validate()" class="submit">Login
+                        </button>
+                      </div>
+                    </form>
+                      <div class="bottom">
+                        <div class="left">
+                          <input type="checkbox" id="check">
+                          <label for="check">Remember ME</label>
+                        </div>
+                
+                        <div class="right">
+                          <label><a href="#">Forgot Password</a></label>
+                        </div>
+                      </div>
+                      
+                      <div class="input-field">
+                        <button type="button" onclick="register()" class="register">New Here? Register
+                        </button>
+                      </div>
+                  </div>            
+    </div>
+    <div class="page1"></div>
+    <div class="front"><span>Login Now</span></div>
+  </div>
+    
+</section>
+    <script src="login-form.js">
+    </script>
+    </body>
+</html>
