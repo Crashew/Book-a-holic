@@ -1,0 +1,213 @@
+
+/* media queries  */
+
+@media (max-width: 2560px) and (min-width: 1440px){
+    html{
+        font-size: 10px;
+    }
+    .footer{
+        gap:1rem;
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 1024px){
+    html{
+        font-size: 10px;
+    }
+    .footer{
+        gap:1rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 864px){
+    html{
+        font-size: 8px;
+    }
+    .header .icons div{
+        height: 4rem;
+        width: 4rem;
+        margin: 4px;
+    }
+    .header .navbar{
+        margin: 0 0.5rem;
+    }
+    section{
+        padding:2rem 7%;
+    }
+    .footer .box img{
+        height: 120px;
+        width: 120px;
+    }
+}
+@media (max-width: 864px) and (min-width: 769px){
+    html{
+        font-size: 9px;
+    }
+    .header .icons div{
+        height: 3.5rem;
+        width: 3.5rem;
+        margin: 3.5px;
+    }
+    .header .navbar a{
+        font-size: 1.5rem;
+    }
+    .header .logo{
+        font-size: 2.5rem;
+    }
+    .home .content{
+        font-size: 18px;
+    }
+    section{
+        padding:2rem 13%;
+    }
+    .features, .blogs, .footer{
+        padding: 2rem;
+    }
+    .footer .box img{
+        display:none;
+    }
+
+}
+
+@media (max-width: 768px) and (min-width: 425px){
+    html{
+        font-size: 9px;
+    }
+    .header .icons div{
+        height: 3.5rem;
+        width: 3.5rem;
+        margin: 3.5px;
+    }
+    .header .navbar a{
+        font-size: 1.5rem;
+    }
+    .header .logo{
+        font-size: 2.5rem;
+    }
+    .home .content{
+        font-size: 18px;
+    }
+    section{
+        padding:2rem 15%;
+    }
+    .footer{
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+}
+@media (max-width: 426px) and (min-width: 321px){
+    html{
+        font-size: 7px;
+    }
+    .header .navbar a{
+        display: none;
+    }
+    .header .logo{
+        font-size: 2.5rem;
+    }
+    .home .content{
+        font-size: 12px;
+    }
+    .home .wrapper{
+        display: none;
+    }
+    section{
+        padding:2rem 20%;
+    }
+    .footer{
+        gap:1rem;
+        font-size: 9px;
+    }
+    .footer .box img{
+        display: none;
+    }
+
+}
+
+@media (max-width: 320px) and (min-width: 0px){
+    html{
+        font-size: 7px;
+    }
+    .header .navbar a{
+        display: none;
+    }
+    .header .logo{
+        font-size: 2.5rem;
+    }
+    .home .content{
+        font-size: 12px;
+        height: 200px;
+        margin: 0;
+    }
+    .home .wrapper{
+        display: none;
+    }
+    section{
+        padding:2rem 20%;
+    }
+    
+    .footer{
+        gap:1rem;
+        font-size: 9px;
+    }
+    .footer .box img{
+        display: none;
+    }
+
+}
+
+
+
+
+/* This is used for burger menu */
+@media (max-width: 768px) and (min-width: 50px){
+    .header  .burger{
+        display: block;
+    }
+    .header  .burger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .header  .burger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .header .burger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .header .icons{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--basecolor);
+        width: 15%;
+        align-items: center;
+        transition: 0.3s;
+    }
+    .header .icons div{
+        margin: 16px 0;
+    }
+    .header .icons.active{
+        right: 15px;
+        padding: 7px;
+    }
+    .header .search-form.active{
+        right: 13rem; top: 110%;
+    }
+    .header .shopping-cart.active{
+        right: 13rem; top: 120%;
+    }
+}
+/* burger menu ends here */
+
+
+@media (max-width: 425px) and (min-width: 0px){
+
+.header .search-form.active{
+    right: 0.5rem; top: 140%;
+}
+.header .shopping-cart.active{
+    right: 0.5rem; top: 210%;
+}
+}
