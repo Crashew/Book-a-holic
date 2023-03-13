@@ -1,0 +1,46 @@
+
+.format .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap:1.5rem;
+}
+
+.format .box-container .box{
+    padding:3rem 2rem;
+    border-radius: .5rem;
+    background:#fff;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: var( --transition);
+}
+
+.format .box-container .box:hover{
+    transform: var( --transform);
+}
+
+.format .box-container .box img{
+    margin:1rem 0;
+    height:15rem;
+    
+}
+.format .box-container .box img:hover{
+    border: solid black 3px;
+    box-shadow: var(--box-shadow);
+}
+
+
+.format .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+   line-height: 1.8;
+}
+
+.format .box-container .box p{
+    font-size: 1.7rem;
+    color:var(--black);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+.format .box-container .box a:hover{
+    background-color: var(--basecolor);;
+}
